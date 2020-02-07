@@ -12,12 +12,15 @@
     </script>
 </head>
 
+<script src="js/script.js"></script>
 <body style='margin: 0; overflow: hidden;'>
+    <div style="position: fixed; z-index: 800000;background-color: white;">HELLO</div>
     <a-scene
-        vr-mode-ui="enabled: false"
-        embedded
-        arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: true;'>
-
-        <a-camera gps-camera rotation-reader></a-camera>
-    </a-scene>
+       vr-mode-ui="enabled: false"
+    embedded
+        arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
+        <a-camera gps-camera rotation-reader>
+    </a-camera>
+  </a-scene>
+  <div>HELLO</div>
 </body>
